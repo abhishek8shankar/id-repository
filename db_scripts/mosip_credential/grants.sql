@@ -1,17 +1,17 @@
-\c mosip_credential 
+\c :mosipdbname
 
 GRANT CONNECT
-   ON DATABASE mosip_credential
-   TO credentialuser;
+   ON DATABASE :mosipdbname
+   TO :dbuname;
 
 GRANT USAGE
    ON SCHEMA credential
-   TO credentialuser;
+   TO :dbuname;
 
 GRANT SELECT,INSERT,UPDATE,DELETE,TRUNCATE,REFERENCES
    ON ALL TABLES IN SCHEMA credential
-   TO credentialuser;
+   TO :dbuname;
 
 ALTER DEFAULT PRIVILEGES IN SCHEMA credential 
-	GRANT SELECT,INSERT,UPDATE,DELETE,REFERENCES ON TABLES TO credentialuser;
+	GRANT SELECT,INSERT,UPDATE,DELETE,REFERENCES ON TABLES TO :dbuname;
 

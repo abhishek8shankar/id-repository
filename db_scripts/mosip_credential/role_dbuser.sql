@@ -1,4 +1,4 @@
-CREATE ROLE credentialuser WITH 
+CREATE ROLE :dbuname WITH
 	INHERIT
 	LOGIN
 	PASSWORD :dbuserpwd;

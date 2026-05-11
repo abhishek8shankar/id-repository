@@ -1,4 +1,4 @@
-CREATE ROLE idmapuser WITH 
+CREATE ROLE :dbuname WITH
 	INHERIT
 	LOGIN
 	PASSWORD :dbuserpwd;
